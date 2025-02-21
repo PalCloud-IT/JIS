@@ -3,7 +3,7 @@
 #include <string.h>
 #include <curl/curl.h>
 
-#define API_KEY "your_openai_api_key"  
+#define API_KEY "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"  
 #define API_URL "https://api.openai.com/v1/chat/completions"
 #define MAX_INPUT_SIZE 1024
 #define MAX_RESPONSE_SIZE 10000
