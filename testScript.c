@@ -1,20 +1,26 @@
 #include <stdio.h>
 
+//#define 
+
 int main() 
 {
-  char choices1[3][5] = {"sure", "no", "okay?"};
+  int a = 3;
+  int b = 5;
+  char choices1[3][5] = {"Sure", "no", "okay?"};
+  char firstUserResponse[30];
 
-
-  int a;
-  printf("%s\n", "Hey... let's talk");
-  printf("%s\n", sizeof(choices1));
-
-  int i;
+  printf("%s\n", "Hey... let's talk \n");
+  scanf("%s", &firstUserResponse);
+  printf("User response: %s", firstUserResponse);
+  //int i;
+  //int j;
   
-  for (i = 0; i < sizeof(choices1); i++) 
+  for (int i = 0; i < 3; i++) 
   {
-    printf("%lu\n", choices1[i]);
+    printf("%i", i + 1);
+    printf("%s", ". ");
+    printf("%s\n", choices1[i]);
   }
-  
+
   return 0;  
 }
